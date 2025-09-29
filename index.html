@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PC – GAMES(XLSX/CSV)</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- XLSX (opzionale ma consigliato se usi data.xlsx) -->
+  <script src="xlsx.full.min.js" defer onerror="console.info('SheetJS non trovato: proverò solo data.csv')"></script>
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+      <h1>PC GAMES</h1>
+      <div class="controls">
+        <label class="control" title="Cerca in tutte le colonne">
+          🔎 <input id="search" type="search" placeholder="Cerca…" />
+        </label>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table id="table" aria-describedby="hint">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="actions">
+      <div id="hint" class="muted">
+        all my games on PC
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
